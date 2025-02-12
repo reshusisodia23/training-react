@@ -2,6 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import Product from "./Product";
 import useRandomJoke from "./useRandomJoke";
 import Mappingtypes from "./Mappingtypes";
+import Reducingfunction from "./Reducingfunction";
+import Counter from "./Counter";
+
 
 
 function App() {
@@ -114,6 +117,8 @@ function App() {
 
       </form>
       <Mappingtypes />
+      <Reducingfunction />
+      <Counter />
      
 
       </center>
