@@ -5,6 +5,7 @@ function ItemDescription({name,description}) {
     <div>
       <p>{name}</p>
       <p><i>{description}</i></p>
+      
     </div>
   )
 }

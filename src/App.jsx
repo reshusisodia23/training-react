@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import Product from "./Product";
 import useRandomJoke from "./useRandomJoke";
+import Mappingtypes from "./Mappingtypes";
+
 
 function App() {
   const firstNameRef = useRef(null)
@@ -10,7 +12,7 @@ function App() {
   const [lastName,setLastName] = useState("");
   const joke = useRandomJoke(firstName,lastName)
 
-  
+
   const generateJoke = e => {
     e.preventDefault();
     setFirstName(firstNameRef.current.value)
@@ -69,6 +71,7 @@ function App() {
 
   return (
     <div >
+      
       <center>
       <p>Count: {count}</p>
       <button onClick={decrement}>-</button>
@@ -110,9 +113,11 @@ function App() {
       <button onClick={generateJoke}>Get New Joke</button>
 
       </form>
-      
+      <Mappingtypes />
+     
 
       </center>
+      
       
     </div>
     
